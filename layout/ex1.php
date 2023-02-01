@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+<?php
+$title = "Exercise 1";
+include "header.php"; 
+?>
 
-    <style>
+  <style>
     table, th, td {
     border-collapse: collapse;
     border: 1px solid #999;
@@ -15,9 +11,6 @@
     text-align: left;
 }
 </style>
-  </head>
-  <body>
-
     
     <?php
 
@@ -47,7 +40,7 @@
     <h1><?php echo $title?></h1>
  
     <h3>These are the grades for 3 students in the course. Use HTML table into echo and include 3 columns S.n., Name, and grade.</h3>
-    
+
 <table class="">
   <tr>
     <th>S.N</th>
@@ -73,12 +66,10 @@
  
 <h3> 4 Screenshot of dev env </h3>
  <?php
-    echo'<img src="img/'. $pic .'" alt="" height="600px" width="1000px>';
+    echo'<img src="../img/'. $pic .'" alt="" height="600px" width="1000px>';
  ?>
 
 
 
 
-	<script src="index.js"></script>
-  </body>
-</html>
+<?php include "footer.php" ?>
