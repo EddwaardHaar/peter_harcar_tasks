@@ -5,7 +5,8 @@ include "header.php";
 
 <div 
 class = "wrapper" 
-style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
+style="margin: auto; padding:10px;">
+
     <?php 
 
         $fname = $_POST['fname'];
@@ -22,6 +23,7 @@ style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
 
 
 ?>
+
 </div>
 
 <?php include "footer.php" ?>

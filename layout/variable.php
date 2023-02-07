@@ -100,44 +100,44 @@ include "header.php" ?>
 
     <?php
 
- function getBrowser()
- {
-   $user_agent = $_SERVER['HTTP_USER_AGENT'];
-   $browser = "N/A";
+    function getBrowser()
+    {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $browser = "N/A";
 
-   $browsers = [
-    '/chrome/i' => 'Chrome',
-    '/firefox/i' => 'Firefox',
-    '/edge/i' => 'Edge',
-    '/opera/i' => 'Opera',
-     
-   ];
+    $browsers = [
+        '/chrome/i' => 'Chrome',
+        '/firefox/i' => 'Firefox',
+        '/edge/i' => 'Edge',
+        '/opera/i' => 'Opera',
+        
+    ];
 
-   foreach ($browsers as $regex => $value) {
-     if (preg_match($regex, $user_agent)) {
-       $browser = $value;
-     }
-   }
+    foreach ($browsers as $regex => $value) {
+        if (preg_match($regex, $user_agent)) {
+        $browser = $value;
+        }
+    }
 
-   return $browser;
- }
+    return $browser;
+    }
 
- echo "Browser: " . getBrowser();
+    echo "Browser: " . getBrowser();
 
-?>
-
-</div>
-
-<div>
-    <br>
-    <h3>7. Write a PHP script in the footer section of your universal footer just below the Copyright information to display the last modification time of a file. (Hint: Use predefined variable $_SERVER, basename function  to get the filename , filetime function to get the last modified time & date function to print the date and time)</h3>
-    <br>
-
-    <?php 
-        echo "check the footer"
     ?>
 
-</div>
+    </div>
+
+    <div>
+        <br>
+        <h3>7. Write a PHP script in the footer section of your universal footer just below the Copyright information to display the last modification time of a file. (Hint: Use predefined variable $_SERVER, basename function  to get the filename , filetime function to get the last modified time & date function to print the date and time)</h3>
+        <br>
+
+        <?php 
+            echo "check the footer"
+        ?>
+
+    </div>
 
 </div>
 
